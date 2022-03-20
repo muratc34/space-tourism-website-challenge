@@ -4,16 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+
+  <!-- CSS Style Sheets -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav_link nav_logo">
+        <img src="assets/shared/logo.svg" alt="logo">
+      </a>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="index.html" class="nav_link"><span class="nav_nums">00</span> Home <div class="rectangle"></div></a>
+          </li>
+          <li class="nav_item">
+            <a href="destination-moon.html" class="nav_link"><span class="nav_nums">01</span> Destination</a>
+          </li>
+          <li class="nav_item">
+            <a href="crew-commander.html" class="nav_link"><span class="nav_nums">02</span> Crew</a>
+          </li>
+          <li class="nav_item">
+            <a href="technology-capsule.html" class="nav_link"><span class="nav_nums">03</span> Technology</a>
+          </li>
+        </ul>
+
+        <!-- Close Button -->
+        <div class="nav_close" id="nav-close">
+          <img src="assets/shared/icon-close.svg" alt="close_button">
+        </div>
+      </div>
+
+      <!-- Toggle Button -->
+      <div class="nav_toggle" id="nav-toggle">
+        <img src="assets/shared/icon-hamburger.svg" alt="menu_button">
+      </div>
+    </nav>
+  </header>
 
   02 Meet your crew
 
@@ -24,5 +58,7 @@
   International Space Station. Glover is a commander in the U.S. Navy where 
   he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
   station systems flight engineer. 
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

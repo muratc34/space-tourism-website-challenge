@@ -30,9 +30,9 @@
     --z-fixed: 100;
 
     /* Background Image Path */
-    --mobile-bg-img:url(/space-tourism-website-challenge/starter-code/assets/home/background-home-mobile.jpg);
-    --tablet-bg-img:url(/space-tourism-website-challenge/starter-code/assets/home/background-home-tablet.jpg);
-    --desktop-bg-img:url(/space-tourism-website-challenge/starter-code/assets/home/background-home-desktop.jpg);
+    --mobile-bg-img:url(../home/background-home-mobile.jpg);
+    --tablet-bg-img:url(../home/background-home-tablet.jpg);
+    --desktop-bg-img:url(../home/background-home-desktop.jpg);
 }
 
 @media screen and (min-width:968px) {
@@ -56,11 +56,13 @@
 
 html{
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body{
     font-family: var(--font-barlow);
     font-size: var(--normal-font-size);
+    background-image: var(--desktop-bg-img);
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--text-color);
@@ -107,6 +109,7 @@ img{
     max-width: 1024px;
     margin-right: 1.5rem;
     margin-left: 1.5rem;
+    margin-top: 1rem;
 }
 
 .grid{
@@ -187,16 +190,27 @@ img{
 .nav_link{
     text-transform: uppercase;
     color: var(--head-color);
-    font-size: var(--normal-font-size);
+    font-family: var(--font-barlow-condensed);
+    font-size: var(--h3-font-size);
     font-weight: var(--font-regular);
     line-height: 19px;
     letter-spacing: 2.7px;
     transition: .3s;
 }
 
+.rectangle{
+    display: inline-block;
+    width: 4px;
+    height: 31px;
+    position:  absolute;
+    right: 7.5rem;
+    top: 8.5rem;
+    background: #FFFFFF;
+}
+
 .nav_nums{
     font-weight: var(--font-bold);
-    margin-right: 5px;
+    margin-right: 0.75rem;
 }
 
 .nav_close{
@@ -208,5 +222,73 @@ img{
 
 /* Show menu */
 .show-menu{
-    right: -30%;
+    right: -32%;
+}
+
+/* MAIN SECTION */
+.home{
+    position: relative;
+    overflow: hidden;
+}
+
+.home_container{
+    position: relative;
+    padding-top: 3rem;
+    row-gap: 1rem;
+}
+
+.home_data{
+    text-align: center;
+}
+
+.home_subtitle{
+    font-family: var(--font-barlow-condensed);
+    font-size: var(--h3-font-size);
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.home_title{
+    font-family: var(--font-bellefair);
+    font-weight: var(--font-regular);
+    font-size: 5rem;
+    line-height: 100px;
+    text-transform: uppercase;
+}
+
+.home_description{
+    text-align: center;
+}
+
+.home_text{
+    font-family: var(--font-barlow);
+    font-weight: var(--font-regular);
+    font-size: var(--normal-font-size);
+    line-height: 25px;
+}
+
+.home_btn{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 11%;
+}
+
+.btn_text{
+    font-family: var(--font-bellefair);
+    font-weight: var(--font-regular);
+    font-size: var(--h2-font-size);
+    line-height: 23px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: #0B0D17;
 }
