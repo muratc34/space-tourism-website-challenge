@@ -3,34 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <title>Frontend Mentor | Space tourism website</title>
 
   <!-- CSS Style Sheets -->
   <link rel="stylesheet" href="assets/css/styles.css">
-  
+
+  <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
   <!-- HEADER -->
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="#home" class="nav_link nav_logo">
+      <a href="index.html" class="nav_link nav_logo">
         <img src="assets/shared/logo.svg" alt="logo">
       </a>
 
       <div class="nav_menu" id="nav-menu">
         <ul class="nav_list">
           <li class="nav_item">
-            <a href="#home" class="nav_link"><span class="nav_nums">00</span> Home</a>
+            <a href="index.html" class="nav_link"><span class="nav_nums">00</span> Home</a>
           </li>
           <li class="nav_item">
-            <a href="#destination" class="nav_link"><span class="nav_nums">01</span> Destination</a>
+            <a href="destination-moon.html" class="nav_link"><span class="nav_nums">01</span> Destination</a>
           </li>
           <li class="nav_item">
-            <a href="#crew" class="nav_link"><span class="nav_nums">02</span> Crew</a>
+            <a href="crew-commander.html" class="nav_link"><span class="nav_nums">02</span> Crew</a>
           </li>
           <li class="nav_item">
-            <a href="#technology" class="nav_link"><span class="nav_nums">03</span> Technology</a>
+            <a href="technology-capsule.html" class="nav_link"><span class="nav_nums">03</span> Technology</a>
           </li>
         </ul>
 
@@ -48,22 +50,23 @@
   </header>
   
   <!-- MAIN -->
-
-  <!-- <section class="middle">
-    <div class="middle-heading">
-      <h3>So, you want to travel to</h3>
-      <h1>Space</h1>
-      <p>
-        Let’s face it; if you want to go to space, you might as well genuinely go to 
-        outer space and not hover kind of on the edge of it. Well sit back, and relax 
-        because we’ll give you a truly out of this world experience!
-      </p>
-    </div>
-  </section>
+  <main class="main">
+    <section class="home section" id="home">
+      <div class="middle-heading">
+        <h3 class="home-title">So, you want to travel to</h3>
+        <h1 class="home-head">Space</h1>
+        <p class="home-description">
+          Let’s face it; if you want to go to space, you might as well genuinely go to 
+          outer space and not hover kind of on the edge of it. Well sit back, and relax 
+          because we’ll give you a truly out of this world experience!
+        </p>
+      </div>
+      <div class="btn">
+        <button class="home-btn">Explore</button>
+      </div>
+    </section>
+  </main>
   
-  <section class="end">
-    <button>Explore</button>
-  </section> -->
 
   <script src="assets/js/main.js"></script>
 </body>
