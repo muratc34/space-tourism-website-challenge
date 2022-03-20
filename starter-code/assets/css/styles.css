@@ -1,0 +1,212 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
+
+/* VARIABLES CSS */
+:root{
+    --header-height:3.5rem;
+
+    /* Colors */
+    --text-color:#D0D6F9;
+    --head-color:#FFFFFF;
+
+    /* Font and typography */
+    /*.5rem = 8px | 1rem = 16px ... */
+    --font-barlow: 'Barlow', sans-serif;
+    --font-barlow-condensed: 'Barlow Condensed', sans-serif;
+    --font-bellefair: 'Bellefair', serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /* Font weight */
+    --font-regular:400;
+    --font-bold:700;
+
+    /* z-index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+    /* Background Image Path */
+    --mobile-bg-img:url(/space-tourism-website-challenge/starter-code/assets/home/background-home-mobile.jpg);
+    --tablet-bg-img:url(/space-tourism-website-challenge/starter-code/assets/home/background-home-tablet.jpg);
+    --desktop-bg-img:url(/space-tourism-website-challenge/starter-code/assets/home/background-home-desktop.jpg);
+}
+
+@media screen and (min-width:968px) {
+    :root{
+        --h1-font-size:2.25rem;
+        --h2-font-size:1.5rem;
+        --h3-font-size:1.25rem;
+        --normal-font-size:1rem;
+        --small-font-size:.875rem;
+        --smaller-font-size:.813rem;
+    }
+}
+
+/* BASE */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--font-barlow);
+    font-size: var(--normal-font-size);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--text-color);
+}
+
+h1,h2,h3 {
+    color: var(--head-color);
+    font-weight: var(--font-regular);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width:769px) {
+    body{
+        background-image: var(--desktop-bg-img);
+    }
+}
+
+@media screen and (max-width:768px) {
+    body{
+        background-image: var(--tablet-bg-img);
+    }
+}
+
+@media screen and (max-width:375px) {
+    body{
+        background-image: var(--mobile-bg-img);
+    }
+}
+
+/* RESUABLE CSS CLASSES */
+.container{
+    max-width: 1024px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section{
+    padding: 4.5rem 0 2rem;
+}
+
+.section__title {
+    font-size: var(--h2-font-size);
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.main{
+    overflow: hidden;
+}
+
+/* HEADER & NAV */
+.header{
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+}
+
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.nav_logo,
+.nav_toggle{
+    display: inline-flex;
+}
+
+.nav_logo{
+    align-items: center;
+    column-gap: .25rem;
+    cursor: pointer;
+}
+
+.nav_toggle{
+    cursor: pointer;
+}
+
+@media screen and (max-width:767px) {
+    .nav_menu{
+        position: fixed;
+        /* background-color: ; */
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(96px);
+        transition: .3s;
+    }
+}
+
+.nav_list{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    row-gap: 3rem;
+    padding-top: 9rem;
+    padding-left: 3rem;
+}
+
+.nav_link{
+    text-transform: uppercase;
+    color: var(--head-color);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-regular);
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    transition: .3s;
+}
+
+.nav_nums{
+    font-weight: var(--font-bold);
+    margin-right: 5px;
+}
+
+.nav_close{
+    position: absolute;
+    top: 2rem;
+    right: 8rem;
+    cursor: pointer;
+}
+
+/* Show menu */
+.show-menu{
+    right: -30%;
+}
