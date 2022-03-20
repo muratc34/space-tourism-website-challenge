@@ -35,16 +35,6 @@
     --desktop-bg-img:url(../home/background-home-desktop.jpg);
 }
 
-@media screen and (min-width:968px) {
-    :root{
-        --h1-font-size:2.25rem;
-        --h2-font-size:1.5rem;
-        --h3-font-size:1.25rem;
-        --normal-font-size:1rem;
-        --small-font-size:.875rem;
-        --smaller-font-size:.813rem;
-    }
-}
 
 /* BASE */
 
@@ -62,7 +52,7 @@ html{
 body{
     font-family: var(--font-barlow);
     font-size: var(--normal-font-size);
-    background-image: var(--desktop-bg-img);
+    background-image: var(--mobile-bg-img);
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--text-color);
@@ -86,23 +76,19 @@ img{
     height: auto;
 }
 
-@media screen and (min-width:769px) {
-    body{
-        background-image: var(--desktop-bg-img);
-    }
-}
-
-@media screen and (max-width:768px) {
+@media screen and (min-width:768px) {
     body{
         background-image: var(--tablet-bg-img);
     }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (min-width:1200px) {
     body{
-        background-image: var(--mobile-bg-img);
+        background-image: var(--desktop-bg-img);
     }
 }
+
+
 
 /* RESUABLE CSS CLASSES */
 .container{
@@ -164,15 +150,14 @@ img{
     cursor: pointer;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:767px) {
     .nav_menu{
         position: fixed;
-        /* background-color: ; */
         top: 0;
         right: -100%;
         width: 100%;
         height: 100%;
-        background: rgba(255, 255, 255, 0.04);
+        background-color: rgba(255, 255, 255, 0.04);
         backdrop-filter: blur(96px);
         transition: .3s;
     }
@@ -203,8 +188,8 @@ img{
     width: 4px;
     height: 31px;
     position:  absolute;
-    right: 7.5rem;
-    top: 8.5rem;
+    top: 20%;
+    right: 32%;
     background: #FFFFFF;
 }
 
@@ -215,8 +200,8 @@ img{
 
 .nav_close{
     position: absolute;
-    top: 2rem;
-    right: 8rem;
+    top: 7%;
+    right: 39%;
     cursor: pointer;
 }
 
@@ -291,4 +276,93 @@ img{
     letter-spacing: 1.25px;
     text-transform: uppercase;
     color: #0B0D17;
+}
+
+/* Breakpoints */
+/* Tablet Device */
+@media screen and (min-width:768px) {
+    .nav_toggle,
+    .nav_close,
+    .nav_nums{
+        display: none;
+    }
+
+    .container{
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section{
+        padding: 7rem 0 2rem;
+    }
+    .nav{
+        margin: 0;
+        margin-left: 3rem;
+    }
+
+    .nav_menu{
+        display: flex;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(96px);
+        padding: 2.5rem;
+        justify-content: center;
+    }
+
+    .nav_list{
+        flex-direction: row;
+        row-gap: 0;
+        column-gap: 3rem;
+        padding: 0rem;
+    }
+
+    .rectangle{
+        width: 40px;
+        height: 3px;
+        right: 81.5%;
+        top: 96%;
+        display: none;
+    }
+
+    .home_container{
+        padding-top: 4rem;
+        height: 100%;
+        width: 60%;
+        row-gap: 1.75rem;
+    }
+
+    .home_subtitle{
+        height: 1.5rem;
+        font-size: var(--h2-font-size);
+        line-height: 24px;
+        letter-spacing: 3.375px;
+    }
+
+    .home_title{
+        height: 150px;
+        font-size: 9.375rem;
+        line-height: 150px;
+    }
+    
+    .home_description{
+        font-size: var(--h3-font-size);
+        line-height: 28px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home_btn{
+        width: 230px;
+        height: 230px;
+        margin-top: 9%;
+    }
+
+    .btn_text{
+        font-size: 2rem;
+        line-height: 37px;
+        letter-spacing: 2px;
+    }
+
 }
