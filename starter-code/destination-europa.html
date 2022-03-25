@@ -12,7 +12,7 @@
 
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
+<body id="destination">
 
   <!-- HEADER -->
   <header class="header" id="header">
@@ -49,27 +49,45 @@
       </div>
     </nav>
   </header>
+  <main class="main">
+    <section class="destination section">
+      <div class="destination_container container grid">
+        <div class="destination_head">
+          <h3 class="destination_subtitle"><span class="destination_num">01</span>Pick your destination</h3>
+          <img class="destination_img" src="assets/destination/image-europa.png" alt="europa">
+        </div>
 
-  01 Pick your destination
+        <ul class="destination_list">
+          <li class="destination_tabs"><a href="destination-moon.html" class="destination_link ">Moon</a></li>
+          <li class="destination_tabs"><a href="destination-mars.html" class="destination_link">Mars</a></li>
+          <li class="destination_tabs"><a href="destination-europa.html" class="destination_link destination_selectedtab">Europa</a></li>
+          <li class="destination_tabs"><a href="destination-titan.html" class="destination_link">Titan</a></li>
+        </ul>
 
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Europa
-
-  The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
-  winter lover’s dream. With an icy surface, it’s perfect for a bit of 
-  ice skating, curling, hockey, or simple relaxation in your snug 
-  wintery cabin.
-
-  Avg. distance
-  628 mil. km
-
-  Est. travel time
-  3 years
-
+        <div class="destination_data">
+          <h2 class="destination_title">Europa</h2>
+          <p class="destination_description">
+            The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+            winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+            ice skating, curling, hockey, or simple relaxation in your snug 
+            wintery cabin.
+          </p>
+        </div>
+        <hr class="destination_line">
+        <div class="destination_end">
+          <div class="info">
+            <h3 class="info_head">Avg. distance</h3>
+            <p class="info_text">628 mil. km</p>
+          </div>
+          <div class="info">
+            <h3 class="info_head">Est. travel time</h3>
+            <p class="info_text">3 years</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
   <script src="assets/js/main.js"></script>
 </body>
 </html>

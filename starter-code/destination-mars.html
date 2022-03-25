@@ -12,7 +12,7 @@
 
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
+<body id="destination">
 
   <!-- HEADER -->
   <header class="header" id="header">
@@ -49,25 +49,43 @@
       </div>
     </nav>
   </header>
+  <main class="main">
+    <section class="destination section">
+      <div class="destination_container container grid">
+        <div class="destination_head">
+          <h3 class="destination_subtitle"><span class="destination_num">01</span>Pick your destination</h3>
+          <img class="destination_img" src="assets/destination/image-mars.png" alt="mars">
+        </div>
 
-  01 Pick your destination
+        <ul class="destination_list">
+          <li class="destination_tabs"><a href="destination-moon.html" class="destination_link">Moon</a></li>
+          <li class="destination_tabs"><a href="destination-mars.html" class="destination_link destination_selectedtab">Mars</a></li>
+          <li class="destination_tabs"><a href="destination-europa.html" class="destination_link">Europa</a></li>
+          <li class="destination_tabs"><a href="destination-titan.html" class="destination_link">Titan</a></li>
+        </ul>
 
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Mars
-
-  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-  the tallest planetary mountain in our solar system. It’s two and a half times 
-  the size of Everest!
-
-  Avg. distance
-  225 mil. km
-
-  Est. travel time
-  9 months
+        <div class="destination_data">
+          <h2 class="destination_title">Mars</h2>
+          <p class="destination_description">
+            Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+            the tallest planetary mountain in our solar system. It’s two and a half times 
+            the size of Everest!
+          </p>
+        </div>
+        <hr class="destination_line">
+        <div class="destination_end">
+          <div class="info">
+            <h3 class="info_head">Avg. distance</h3>
+            <p class="info_text">225 mil. km</p>
+          </div>
+          <div class="info">
+            <h3 class="info_head">Est. travel time</h3>
+            <p class="info_text">9 months</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <script src="assets/js/main.js"></script>
 </body>

@@ -12,7 +12,7 @@
 
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
+<body id="destination">
 
   <!-- HEADER -->
   <header class="header" id="header">
@@ -50,24 +50,53 @@
     </nav>
   </header>
 
-  01 Pick your destination
+  <main class="main">
+    <section class="destination section">
+      <div class="destination_container container grid">
+        <div class="destination_head">
+          <h3 class="destination_subtitle"><span class="destination_num">01</span>Pick your destination</h3>
+          <img class="destination_img" src="assets/destination/image-moon.png" alt="moon">
+        </div>
+        <div class="destination_tabs">
+          <ul class="destination_list">
+            <li><a href="destination-moon.html" class="destination_link destination_selectedtab">Moon</a></li>
+            <li><a href="destination-mars.html" class="destination_link">Mars</a></li>
+            <li><a href="destination-europa.html" class="destination_link">Europa</a></li>
+            <li><a href="destination-titan.html" class="destination_link">Titan</a></li>
+          </ul>
+        </div>
+        
+        <div class="destination_data">
+          <h2 class="destination_title">Moon</h2>
+          <p class="destination_description">
+            See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+            regain perspective and come back refreshed. While you’re there, take in some history 
+            by visiting the Luna 2 and Apollo 11 landing sites.
+          </p>
+        </div>
+        <hr class="destination_line">
+        <div class="destination_end">
+          <div class="info">
+            <h3 class="info_head">Avg. distance</h3>
+            <p class="info_text">384,400 km</p>
+          </div>
+          <div class="info">
+            <h3 class="info_head">Est. travel time</h3>
+            <p class="info_text">3 days</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
 
-  Moon
-  Mars
-  Europa
-  Titan
+  
 
-  Moon
+  
+  
 
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
-
-  Avg. distance
-  384,400 km
-
-  Est. travel time
-  3 days
+  
+  
 
   <script src="assets/js/main.js"></script>
 </body>
