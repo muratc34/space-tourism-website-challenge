@@ -58,7 +58,7 @@
 
 html{
     scroll-behavior: smooth;
-    height: max-content;
+    min-height:100%;
 }
 
 body{
@@ -359,7 +359,6 @@ body#technology{
     position: relative;
     padding-top: 1rem;
     row-gap: 1rem;
-    max-height: max-content;
 }
 
 .destination_head{
@@ -482,6 +481,7 @@ body#technology{
 /* Tablet */
 @media screen and (min-width:577px) {
     /* navbar */
+
     .nav_toggle,
     .nav_close,
     .nav_nums{
