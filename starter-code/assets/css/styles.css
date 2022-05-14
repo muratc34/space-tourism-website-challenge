@@ -541,6 +541,10 @@ body#technology{
     justify-content: center;
 }
 
+.crew_link{
+    margin-right: 1rem;
+}
+
 .crew_oval{
     width: 10px;
     height: 10px;
@@ -641,7 +645,7 @@ body#technology{
         border-bottom: .2rem solid #FFFFFF;
         padding-bottom: 2.3rem;
     }
-    /* home page */
+    /* Home */
     .rectangle-home,
     .rectangle-crew,
     .rectangle-destination,
@@ -689,7 +693,7 @@ body#technology{
         letter-spacing: 2px;
     }
 
-    /* destination page*/
+    /* Destination*/
 
     .destination_container{
         margin-left: 2.28rem;
@@ -755,6 +759,59 @@ body#technology{
 
     .info{
         margin-top: 1.75rem;
+    }
+
+    /* Crew */
+
+    .crew_container{
+        margin-left: 2.28rem;
+        margin-right: 2.28rem;
+    }
+    
+    .crew_head{
+        margin: 0;
+        text-align: left;
+        grid-row: 1/2;
+    }
+
+    .crew_subtitle{
+        font-size: var(--h2-font-size);
+        line-height: 24px;
+        letter-spacing: 3.375px;
+    }
+
+    .crew_head_img{
+        grid-row: 4/5;
+        margin-top: 2.5rem;
+    }
+
+    .crew_img{
+        width: 456px;
+    }
+
+    .crew_line{
+        display: none;
+    }
+
+    .crew_data{
+        grid-row: 2/3;
+    }
+
+    .crew_title{
+        font-size: var(--h1-font-size);
+        line-height: 28px;
+    }
+    
+    .crew_name{
+        font-size: 2.5rem;
+        line-height: 46px;
+    }
+
+    .crew_description{
+        font-size: var(--h3-font-size);
+        line-height: 28px;
+        margin-left: 17%;
+        margin-right: 17%;
     }
 
 }
@@ -923,6 +980,67 @@ body#technology{
 
     .info{
         text-align: left;
+    }
+
+    /* Crew */
+    .crew_container{
+        margin-left: 9%;
+        margin-right: 9%;
+        margin-top: 4%;
+    }
+
+    .crew_subtitle{
+        font-size: 1.75rem;
+        line-height: 34px;
+        letter-spacing: 4.725px;
+    }
+
+    .crew_head_img{
+        grid-row: 1/4;
+        grid-column: 2/3;
+    }
+
+    .crew_img{
+        width: 568px;
+        height: auto;
+    }
+    
+    .crew_tabs{
+        margin-left: 0.25rem;
+    }
+
+    .crew_list{
+        justify-content: start;
+    }
+
+    .crew_link{
+        margin-left: 1.5rem;
+    }
+
+    .crew_oval{
+        width: 15px;
+        height: 15px;
+    }
+
+    .crew_data{
+        text-align: left;
+    }
+
+    .crew_title{
+        font-size: 2rem;
+        line-height: 37px;
+    }
+
+    .crew_name{
+        font-size: 3.5rem;
+        line-height: 64px;
+    }
+
+    .crew_description{
+        font-size: var(--h2-font-size);
+        line-height: 32px;
+        margin: 0;
+        width: 85%;
     }
 
 }
