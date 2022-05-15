@@ -1249,6 +1249,7 @@ body#technology{
         grid-row: 2/3;
         grid-column: 3/4;
         margin: 0;
+        margin-right: -9%;
     }
 
     .technology_img{
@@ -1295,7 +1296,7 @@ body#technology{
         font-size: 1.125rem;
         line-height: 32px;
         padding: 0;
-        width: 444px;
+        max-width: 444px;
     }
 
 }
