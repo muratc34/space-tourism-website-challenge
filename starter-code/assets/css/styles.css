@@ -244,25 +244,25 @@ body#technology{
     width: 4px;
     height: 31px;
     display: inline-block;
-    position: relative;
-    margin-left: 34%;
+    position: absolute;
+    right: 32%;
     background-color: #FFFFFF;
 }
 
 .rectangle-home{
-    top:8px;
+    top:139px;
 }
 
 .rectangle-destination{
-    top: 75px;
+    top: 206px;
 }
 
 .rectangle-crew{
-    top: 142px;
+    top: 273px;
 }
 
 .rectangle-technology{
-    top: 209px;
+    top: 340px;
 }
 
 .nav_close{
