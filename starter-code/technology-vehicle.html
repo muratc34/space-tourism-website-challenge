@@ -17,7 +17,7 @@
   <!-- HEADER -->
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="index.html" class="nav_link nav_logo">
+      <a href="index.html" class="nav_logo">
         <img src="assets/shared/logo.svg" alt="logo">
       </a>
       <hr>
@@ -33,7 +33,7 @@
             <a id="crew" href="crew-commander.html" class="nav_link"><span class="nav_nums">02</span> Crew</a>
           </li>
           <li class="nav_item">
-            <a id="technology" href="technology-capsule.html" class="nav_link nav_selectedline"><span class="nav_nums">03</span> Technology</a>
+            <a id="technology" href="technology-vehicle.html" class="nav_link nav_selectedline"><span class="nav_nums">03</span> Technology</a>
           </li>
         </ul>
 
@@ -49,20 +49,40 @@
       </div>
     </nav>
   </header>
+  
+  <!-- MAIN -->
+  <main class="main">
+    <section class="technology section">
+      <div class="technology_container container grid">
+        <div class="technology_head">
+          <h3 class="technology_title"><span class="technology_num">03</span>Space launch 101</h3>
+        </div>
+        <div class="technology_head_img">
+          <img class="technology_img technology_vehicle" src="assets/technology/image-launch-vehicle-landscape.jpg" alt="launch-vehicle-landspace">
+        </div>
 
-  03 Space launch 101
+        <div class="technology_tabs">
+          <ul class="technology_list">
+            <li><a href="technology-vehicle.html" class="technology_link"><div class="technology_oval technology_selectedtab">1</div></a></li>
+            <li><a href="technology-spaceport.html" class="technology_link"><div class="technology_oval">2</div></a></li>
+            <li><a href="technology-capsule.html" class="technology_link"><div class="technology_oval">3</div></a></li>
+          </ul>
+        </div>
 
-  1
-  2
-  3
+        <div class="technology_data">
+          <h3 class="technology_subtitle">The terminology...</h3>
+          <h1 class="technology_name">Launch vehicle</h1>
+          <p class="technology_description">
+            A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+            payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+            WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+            it's quite an awe-inspiring sight on the launch pad!
+          </p>
+        </div>
 
-  The terminology...
-  Launch vehicle
-
-  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
-  payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
-  WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
-  it's quite an awe-inspiring sight on the launch pad!
+      </div>
+    </section>
+  </main>
 
   <script src="assets/js/main.js"></script>
 </body>

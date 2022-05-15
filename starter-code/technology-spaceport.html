@@ -17,7 +17,7 @@
   <!-- HEADER -->
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="index.html" class="nav_link nav_logo">
+      <a href="index.html" class="nav_logo">
         <img src="assets/shared/logo.svg" alt="logo">
       </a>
       <hr>
@@ -33,7 +33,7 @@
             <a id="crew" href="crew-commander.html" class="nav_link"><span class="nav_nums">02</span> Crew</a>
           </li>
           <li class="nav_item">
-            <a id="technology" href="technology-capsule.html" class="nav_link nav_selectedline"><span class="nav_nums">03</span> Technology</a>
+            <a id="technology" href="technology-vehicle.html" class="nav_link nav_selectedline"><span class="nav_nums">03</span> Technology</a>
           </li>
         </ul>
 
@@ -50,19 +50,39 @@
     </nav>
   </header>
 
-  03 Space launch 101
+  <!-- MAIN -->
+  <main class="main">
+    <section class="technology section">
+      <div class="technology_container container grid">
+        <div class="technology_head">
+          <h3 class="technology_title"><span class="technology_num">03</span>Space launch 101</h3>
+        </div>
+        <div class="technology_head_img">
+          <img class="technology_img technology_spaceport" src="assets/technology/image-spaceport-landscape.jpg" alt="spaceport-landspace">
+        </div>
 
-  1
-  2
-  3
+        <div class="technology_tabs">
+          <ul class="technology_list">
+            <li><a href="technology-vehicle.html" class="technology_link"><div class="technology_oval ">1</div></a></li>
+            <li><a href="technology-spaceport.html" class="technology_link"><div class="technology_oval technology_selectedtab">2</div></a></li>
+            <li><a href="technology-capsule.html" class="technology_link"><div class="technology_oval">3</div></a></li>
+          </ul>
+        </div>
 
-  The terminology...
-  Spaceport
+        <div class="technology_data">
+          <h3 class="technology_subtitle">The terminology...</h3>
+          <h1 class="technology_name">Spaceport</h1>
+          <p class="technology_description">
+            A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+            by analogy to the seaport for ships or airport for aircraft. Based in the 
+            famous Cape Canaveral, our spaceport is ideally situated to take advantage 
+            of the Earth’s rotation for launch.
+          </p>
+        </div>
 
-  A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
-  by analogy to the seaport for ships or airport for aircraft. Based in the 
-  famous Cape Canaveral, our spaceport is ideally situated to take advantage 
-  of the Earth’s rotation for launch.
+      </div>
+    </section>
+  </main>
 
   <script src="assets/js/main.js"></script>
 </body>

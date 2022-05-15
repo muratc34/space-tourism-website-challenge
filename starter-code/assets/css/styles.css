@@ -244,25 +244,25 @@ body#technology{
     width: 4px;
     height: 31px;
     display: inline-block;
-    position: absolute;
-    right: 32%;
+    position: relative;
+    margin-left: 34%;
     background-color: #FFFFFF;
 }
 
 .rectangle-home{
-    top: 15.5%;
+    top:8px;
 }
 
 .rectangle-destination{
-    top: 23%;
+    top: 75px;
 }
 
 .rectangle-crew{
-    top: 30.5%;
+    top: 142px;
 }
 
 .rectangle-technology{
-    top: 38%;
+    top: 209px;
 }
 
 .nav_close{
@@ -593,6 +593,116 @@ body#technology{
     margin-top: 1rem;
 }
 
+/* Technology */
+
+.technology{
+    position: relative;
+    overflow: hidden;
+}
+
+.technology_container{
+    position: relative;
+    padding-top: 3rem;
+    row-gap: 1rem;
+}
+
+.technology_head{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.technology_title{
+    font-family: var(--font-barlow);
+    font-size: var(--h3-font-size);
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+
+.technology_num{
+    font-weight: var(--font-bold);
+    opacity: 0.25;
+    padding-right: 1.125rem;
+}
+
+.technology_head_img{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.technology_img{
+    width: 118%;
+    margin:0 -1.5rem;
+}
+
+.technology_tabs{
+    margin-top: 1.125rem;
+}
+
+.technology_list{
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.technology_link{
+    font-family: var(--font-bellefair);
+    color: var(--head-color);
+    line-height: 18px;
+}
+
+.technology_oval{
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.technology_oval:hover{
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.technology_selectedtab{
+    background-color: var(--head-color);
+    color: #0B0D17;
+    opacity: 1;
+}
+
+.technology_data{
+    text-align: center;
+    margin-top: 0.625rem;
+}
+
+.technology_subtitle{
+    font-family: var(--font-barlow-condensed);
+    font-size: 0.875rem;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.technology_name{
+    font-family: var(--font-bellefair);
+    font-size: var(--h1-font-size);
+    line-height: 28px;
+    text-transform: uppercase;
+    color: var(--head-color);
+    margin-top: 0.567rem;
+}
+
+.technology_description{
+    font-family: var(--font-barlow);
+    font-size: var(--normal-font-size);
+    line-height: 25px;
+    color: var(--text-color);
+}
+
+
 /* Breakpoints */
 /* Tablet */
 @media screen and (min-width:577px) {
@@ -812,6 +922,68 @@ body#technology{
         line-height: 28px;
         margin-left: 17%;
         margin-right: 17%;
+    }
+
+    /* Technology */
+
+    .technology_container{
+        margin-left: 2.28rem;
+        margin-right: 2.28rem;
+    }
+
+    .technology_head{
+        margin: 0;
+        text-align: left;
+    }
+
+    .technology_title{
+        font-size: var(--h2-font-size);
+        line-height: 24px;
+        letter-spacing: 3.375px;
+    }
+    
+    .technology_head_img{
+        margin-top: 2.75rem;
+    }
+
+    .technology_img{
+        margin: 0 -2.28rem;
+    }
+
+    .technology_tabs{
+        margin-top: 2.5rem;
+    }
+
+    .technology_oval{
+        width: 58px;
+        height: 58px;
+    }
+
+    .technology_link{
+        font-size: var(--h1-font-size);
+    }
+
+    .technology_data{
+        margin-top: 1.75rem;
+    }
+
+    .technology_subtitle{
+        font-size: var(--h3-font-size);
+        line-height: 19px;
+        letter-spacing: 2.7px;
+    }
+
+    .technology_name{
+        font-size: 2.5rem;
+        line-height: 46px;
+        margin-top: 1rem;
+    }
+
+    .technology_description{
+        font-size: var(--h3-font-size);
+        line-height: 28px;
+        margin-top: 1rem;
+        padding: 0 19%;
     }
 
 }
@@ -1041,6 +1213,89 @@ body#technology{
         line-height: 32px;
         margin: 0;
         width: 85%;
+    }
+
+    /* Technology */
+
+    .technology_container{
+        margin-left: 9%;
+        margin-top: 4%;
+    }
+
+    .technology_head{
+        grid-column: 1/4;
+    }
+
+    .technology_title{
+        font-size: 1.75rem;
+        line-height: 34px;
+        letter-spacing: 4.725px;
+        margin-bottom: 0.625rem;
+    }
+
+    .technology_vehicle{
+        content: url(../technology/image-launch-vehicle-portrait.jpg);
+    }
+
+    .technology_capsule{
+        content: url(../technology/image-space-capsule-portrait.jpg);
+    }
+
+    .technology_spaceport{
+        content: url(../technology/image-spaceport-portrait.jpg);
+    }
+
+    .technology_head_img{
+        grid-row: 2/3;
+        grid-column: 3/4;
+        margin: 0;
+    }
+
+    .technology_img{
+        width: 515px;
+    }
+
+    .technology_tabs{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        margin-top: 7.5rem;
+    }
+
+    .technology_list{
+        flex-direction: column;
+        row-gap: 2rem;
+        column-gap: 0;
+    }
+
+    .technology_link{
+        font-size: 2rem;
+        line-height: 37px;
+    }
+
+    .technology_oval{
+        width: 80px;
+        height: 80px;
+    }
+
+    .technology_data{
+        grid-row: 2/3;
+        text-align: left;
+        margin-top: 7.5rem;
+        margin-right: 2rem;
+        margin-left: 4rem;
+    }
+
+    .technology_name{
+        font-size: 3.5rem;
+        line-height: 64px;
+        margin-top: 0.6875rem;
+    }
+
+    .technology_description{
+        font-size: 1.125rem;
+        line-height: 32px;
+        padding: 0;
+        width: 444px;
     }
 
 }
