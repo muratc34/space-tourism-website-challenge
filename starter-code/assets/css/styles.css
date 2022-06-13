@@ -81,7 +81,7 @@ a{
     text-decoration: none;
 }
 
-hr{
+.nav hr{
     display: none;
 }
 
@@ -1013,6 +1013,10 @@ body#technology{
 
     .nav_nums{
         display: inline-block;
+    }
+
+    .nav hr{
+        display: block;
     }
 
     .grid{
